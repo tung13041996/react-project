@@ -1,0 +1,44 @@
+.todo-list {
+    .group-input {
+        input {
+            height:45px;
+            border:1px solid rgba(112,112,112,.7);
+            padding:5px 20px;
+            border-radius: 10px;
+            width: 400px;
+            &:hover, &:focus {
+                border-color: blue;
+            }
+        }
+        button {
+            background-color:transparent;
+            border-radius: 100px;
+            border:1px solid rgba(112,112,112,.5);
+            padding:10px 20px;
+            margin-left: 20px;
+            cursor: pointer;
+            transition:all .3s ease;
+            &:hover {
+                background-color:green;
+                color:#fff;
+                border-color:green
+            }
+        }
+    }
+    h2 {
+        text-align: center;
+    }
+    .task-list {
+        display:flex;
+        .task-done, .task-undone {
+            width: 50%;
+        }
+        ul {
+            list-style: none;
+             margin: 0;
+            li {
+                padding:0;
+            }
+        }
+    }
+}
