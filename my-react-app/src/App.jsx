@@ -1,9 +1,9 @@
-
+import CountDownBox from "./assets/components/CountDownBox"
 function App() {
 
   return (
     <div className="App">
-      learning React
+      <CountDownBox name="Peter" number={0}/>
     </div>
   )
 }
