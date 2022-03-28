@@ -30,10 +30,12 @@ const _handleUncompleted = (task) => {
             <div className="task-undone">
                 <h3>Task Undone</h3>
                 {
-                    toDoList.filter(e => !e.isCompleted).map(e => 
-                        <div key={e.id} className="task-item">
-                            <div onClick={_handleCompleted} className="task-item_name">{e.name}</div>
+                    toDoList.map((e,i) => 
+                        !e.isCompleted ? 
+                            <div key={e.id} className="task-item">
+                            <div onClick={() => _handleCompleted(i)} className="task-item_name">{e.name}</div>
                         </div>
+                        : null 
                     )
                 }
             </div>
